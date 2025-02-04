@@ -8,10 +8,30 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("First App"),
+          backgroundColor: Colors.lightBlue,
+          title : Text(
+            'My App',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
         ),
         body: Center(
-          child: Text("Hello World"),
+          child: Container(
+            color: Colors.lightBlue,
+            width: 150,
+            height: 50,
+            child: Text(
+              "Hello, World!",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.white,
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          )
         ),
       ),
     );
